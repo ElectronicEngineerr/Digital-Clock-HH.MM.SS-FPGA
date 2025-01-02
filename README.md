@@ -27,6 +27,77 @@ Don’t forget to use the 'IEEE.std_logic_unsigned' library! 😊
 
 ![MUNITE => HOUR TRANSITION](modelsim_munite_to_hour.png)
 
+TEST BENCH => DIGITAL CLOCK
+```
+    
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity tb_digital_clock is
+--  Port ( );
+end tb_digital_clock;
+
+architecture Behavioral of tb_digital_clock is
+
+component digital_clock is
+
+		port ( 
+					clk 		: 		in std_logic;
+					reset 		: 		in std_logic;
+					---------------------------------
+					hour_counter 		: 		out std_logic_vector ( 4 downto 0 );
+					minute_counter 		:  		out std_logic_vector ( 5 downto 0 );
+					second_counter 		: 		out std_logic_vector ( 5 downto 0 )
+			 );	
+end component;
+
+signal clk : std_logic;
+signal reset : std_logic;
+signal hour_counter : std_logic_vector(4 downto 0)   := (others => '0');
+signal minute_counter : std_logic_vector(5 downto 0) := (others => '0');
+signal second_counter : std_logic_vector(5 downto 0) := (others => '0');
+
+
+
+begin
+
+    
+uut : digital_clock port map(
+
+            clk => clk,
+            reset => reset,
+            hour_counter => hour_counter,
+            minute_counter => minute_counter,
+            second_counter => second_counter
+
+);
+
+clock_config : process
+begin
+
+       clk <= '0';
+       wait for 0.5 sec;
+       clk <= '1';
+       wait for 0.5 sec;
+    
+end process;
+
+stimm : process
+    begin
+    
+        reset <= '1' ;
+        wait for 2 sec;
+        reset <= '0';
+        wait for 20 sec;
+        wait;
+
+end process;
+
+end Behavioral;
+```
 
 
 If you'd like to improve yourself further, you can take this to the next level by adding milliseconds. Additionally, if you have an FPGA board, you can implement this algorithm on seven-segment displays...
