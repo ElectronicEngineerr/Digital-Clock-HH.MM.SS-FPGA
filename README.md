@@ -44,14 +44,15 @@ architecture Behavioral of tb_digital_clock is
 
 component digital_clock is
 
-		port ( 
+		port ( 			-- INPUTS	
 					clk 		: 		in std_logic;
 					reset 		: 		in std_logic;
-					---------------------------------
+					---------------------------------------------------------------------------
+					-- OUTPUTS
 					hour_counter 		: 		out std_logic_vector ( 4 downto 0 );
 					minute_counter 		:  		out std_logic_vector ( 5 downto 0 );
 					second_counter 		: 		out std_logic_vector ( 5 downto 0 )
-			 );	
+		 );	
 end component;
 
 signal clk : std_logic;
@@ -59,12 +60,7 @@ signal reset : std_logic;
 signal hour_counter : std_logic_vector(4 downto 0)   := (others => '0');
 signal minute_counter : std_logic_vector(5 downto 0) := (others => '0');
 signal second_counter : std_logic_vector(5 downto 0) := (others => '0');
-
-
-
 begin
-
-    
 uut : digital_clock port map(
 
             clk => clk,
@@ -72,7 +68,6 @@ uut : digital_clock port map(
             hour_counter => hour_counter,
             minute_counter => minute_counter,
             second_counter => second_counter
-
 );
 
 clock_config : process
