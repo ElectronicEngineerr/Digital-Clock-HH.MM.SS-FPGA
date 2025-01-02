@@ -19,13 +19,14 @@ Don’t forget to use the 'IEEE.std_logic_unsigned' library! 😊
 
 ![MUNITE => HOUR TRANSITION](SECOND_to_MUNITE.png)
 
-[SECOND => MUNITE TRANSITION (MODELSIM)]
+[SECOND => MUNITE TRANSITION (QUESTA-SIM)]
 
 ![SECOND => MUNITE TRANSITION](modelsim_second_to_munite.png)
 
-[MUNITE => HOUR TRANSITION (MODELSIM)]
+[MUNITE => HOUR TRANSITION (QUESTA-SIM)]
 
 ![MUNITE => HOUR TRANSITION](modelsim_munite_to_hour.png)
+![MUNITE => HOUR TRANSITION](range_modelsim.png)
 
 [RANGE]
 
