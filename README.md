@@ -27,6 +27,10 @@ Don’t forget to use the 'IEEE.std_logic_unsigned' library! 😊
 
 ![MUNITE => HOUR TRANSITION](modelsim_munite_to_hour.png)
 
+[RANGE]
+
+![RANGE](RANGE.png)
+
 TEST BENCH => DIGITAL CLOCK
 ```
     
