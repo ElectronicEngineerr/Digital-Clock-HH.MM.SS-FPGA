@@ -9,5 +9,10 @@ The only point to pay attention to is type conversions. Many people attempt to p
 
 Don’t forget to use the 'IEEE.std_logic_unsigned' library! 😊
 
+[SECOND => MUNİTE TRANSITION]
+
 ![SECOND => MUNİTE TRANSITION](MUNITE_to_HOUR.png)
+
+[MUNITE => HOUR TRANSITION]
+
 ![MUNITE => HOUR TRANSITION](SECOND_to_MUNITE.png)
