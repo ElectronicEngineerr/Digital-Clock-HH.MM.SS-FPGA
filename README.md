@@ -9,7 +9,5 @@ The only point to pay attention to is type conversions. Many people attempt to p
 
 Don’t forget to use the 'IEEE.std_logic_unsigned' library! 😊
 
-![SECOND => MUNİTE TRANSITION](Digital-Clock-HH.MM.SS-FPGA
-/munite - hour.png)
-![MUNITE => HOUR TRANSITION](Digital-Clock-HH.MM.SS-FPGA
-/second - munıte.png)
+![SECOND => MUNİTE TRANSITION](Digital-Clock-HH.MM.SS-FPGA/munite-hour.png)
+![MUNITE => HOUR TRANSITION](Digital-Clock-HH.MM.SS-FPGA/second-munıte.png)
