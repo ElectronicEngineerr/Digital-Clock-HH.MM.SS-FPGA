@@ -26,11 +26,12 @@ Don’t forget to use the 'IEEE.std_logic_unsigned' library! 😊
 [MUNITE => HOUR TRANSITION (QUESTA-SIM)]
 
 ![MUNITE => HOUR TRANSITION](modelsim_munite_to_hour.png)
-![MUNITE => HOUR TRANSITION](range_modelsim.png)
+
 
 [RANGE]
 
 ![RANGE](RANGE.png)
+![RANGE](range_modelsim.png)
 
 TEST BENCH => DIGITAL CLOCK
 ```
