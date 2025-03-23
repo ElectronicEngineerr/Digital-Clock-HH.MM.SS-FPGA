@@ -1,6 +1,7 @@
 # Digital-Clock-HH.MM.SS-FPGA
 Design Digital Clock ( HH.MM.SS) with VHDL / FPGA
 
+
 ![SECOND => MUNİTE TRANSITION](R1346451-01.jpg)
 
 FPGA üzerinde seven segment display kullanmadan bir clock periyodunun ayarlanmasıyla saat, dakika, saniye olarak bir dijital saat tasarımı, algoritmayı anlamanızda yardımcı olacaktır. 
